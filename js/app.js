@@ -17,6 +17,8 @@ function comprarPista(qtdIngresso) {
     alert(
       `ERRO: Você digitou um valor maior que a quantidade de ingressos disponíveis para PISTA`
     );
+  } else if (qtdIngresso < 0) {
+    alert(`ERRO: Digite um número válido para a compra de ingressos.`);
   } else {
     alert("Compra realizada com sucesso!");
     qtdPistaValor = qtdPistaValor - qtdIngresso;
@@ -30,6 +32,8 @@ function comprarInferior(qtdIngresso) {
     alert(
       `ERRO: Você digitou um valor maior que a quantidade de ingressos disponíveis para Cadeira Inferior`
     );
+  } else if (qtdIngresso < 0) {
+    alert(`ERRO: Digite um número válido para a compra de ingressos.`);
   } else {
     alert("Compra realizada com sucesso!");
     qtdInferiorValor = qtdInferiorValor - qtdIngresso;
@@ -43,6 +47,8 @@ function comprarSuperior(qtdIngresso) {
     alert(
       `ERRO: Você digitou um valor maior que a quantidade de ingressos disponíveis para Cadeira Superior`
     );
+  } else if (qtdIngresso < 0) {
+    alert(`ERRO: Digite um número válido para a compra de ingressos.`);
   } else {
     alert("Compra realizada com sucesso!");
     qtdSuperiorValor = qtdSuperiorValor - qtdIngresso;
